@@ -14,18 +14,19 @@ def parseString (st):
 def allwords(file):
     allwords=[]
     book = open(file,"r",encoding='utf8')
-    all_words={}
+    out_file = open ("allwords.txt", "w+")
     for line in book:
         line=line.strip()
         line=parseString(line)
         line=line.lower()
+        line=line.split()
         for word in line:
             allwords.append(word)
-    return allwords
-
+    for vocab in allwords:
+      out_file.write(vocab+"\n")
+    
 
 def main():
-    allwords()
-
+    allwords("Sherlock.txt")
 
 main()
