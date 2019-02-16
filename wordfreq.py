@@ -17,3 +17,4 @@ def word_freq(d):
 		file.write(str(elem) + ": " + str(freq_dict[elem]) + "\n")
 
 	file.close()
+
