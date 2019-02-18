@@ -16,7 +16,8 @@ The uniquewords.txt file contains all unique words within the book, each written
 a3_novelvisualization
 
 This processing file generates a word cloud based on the contents of unique words.txt. A new word cloud is 
-displayed upon mouse click.
+displayed upon mouse click. The colors used in a3_novelvisualization.pde were generated from a novel cover for Sherlock Holmes.
+The font for a3_novelvisualization.pde, Old English Text MT, carries a Sherlock Holmes vibe. 
 
 
 a3_wordfrequency
@@ -35,7 +36,7 @@ application.
 
 Team Member Contributions
 
-Jason Lan - 
-Javier Alvarado -
-Susan Ward -
+Jason Lan - function to write allwords.txt and cleaning code
+Javier Alvarado - function to write wordfrequency.txt
+Susan Ward - function to write uniquewords.txt and a3_novelvisualization
 Waleed Khan - a3_wordfrequency and Sherlock_wordle.png
