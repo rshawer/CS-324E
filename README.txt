@@ -19,7 +19,6 @@ comparable apparatus. Upon running the .txt files are generated and can be used 
 
 a3_novelvisualization
 
-
 	This processing file generates a word cloud based on the contents of unique words.txt. In order to run this
 program, the file path to the uniquewords.txt file must be included in the processing code body. This can be simplified
 by simply placing a copy of the uniquewords.txt file within the processing file folder to access the text document
