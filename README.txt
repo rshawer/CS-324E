@@ -6,7 +6,7 @@ extrac_words.py -
 Creates: allwords.txt, uniquewords.txt, and wordfrequency.txt
 
 In order to create these text files, the chosen book's .txt file must be added to the script's code body. Then, the script must be run through terminal or a comparable apparatus. Upon running the .txt files are generated and can be used in the following processing files.
-
+The three text files will be created in the folder. Put the uniquewords.txt in the a3_novelvisualization folder. Put the wordfrequency file in the a3_wordfrequency file.
 
 a3_novelvisualization
 

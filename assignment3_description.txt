@@ -36,7 +36,7 @@ application.
 
 Team Member Contributions
 
-Jason Lan - function to write allwords.txt and cleaning code
+Jason Lan - function to write allwords.txt, compiling code, bug fixing
 Javier Alvarado - function to write wordfrequency.txt
 Susan Ward - function to write uniquewords.txt and a3_novelvisualization
 Waleed Khan - a3_wordfrequency and Sherlock_wordle.png
