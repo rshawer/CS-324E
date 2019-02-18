@@ -80,6 +80,7 @@ def word_freq(d):
 	file.close()
 
 def main():
+	allword("Sherlock.txt")
 	wordCountDict = uniqueWords("Sherlock.txt")
 	word_freq(wordCountDict)
 main()
