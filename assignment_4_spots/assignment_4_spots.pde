@@ -9,6 +9,7 @@ SpikedSpheres h;
 Person guy1;
 Person guy2;
 Person guy3;
+SunMoon day;
 
 
 void setup () {
@@ -38,14 +39,25 @@ void setup () {
  guy1 = new Person(125, 600, 150, 200, color(255, 181, 132), color(7, 255, 139));
  guy2 = new Person(525, 700, 150, 200, color(255, 224, 175), color(255, 255, 255));
  guy3 = new Person(925, 600, 150, 200, color(188, 117, 3), color(0, 49, 247));
- 
+ //Sun and Moon
+ day = new SunMoon(100, 100, 75, 10, "day");
 }
 
 void draw() {
   
  clear();
+ if (day.time == "day") {
+   background(175, 244, 255);
+ }
+ else {
+   background(0);
+ }
+   
+ 
  fill(255);
  
+ day.display();
+ day.move();
  //a.display();
  //b.display();
  c.display();
