@@ -4,6 +4,8 @@ ColoredSpot c;
 ColoredSpot d;
 Two_Spots e;
 Two_Spots f;
+SpikedSpheres g;
+SpikedSpheres h;
 Person guy1;
 Person guy2;
 Person guy3;
@@ -21,7 +23,8 @@ void setup () {
  Vector D = new Vector(10, -10, 2);
  Vector E = new Vector(0, 10, 5);
  Vector F = new Vector(5, 10, 3);
- 
+ Vector G = new Vector(6, -12,4);
+ Vector H = new Vector(-6, 12, 3);
  // Spot Initializations
  a = new Spot(0, 0, 100, A);
  b = new Spot(500, 500, 100, B);
@@ -29,8 +32,8 @@ void setup () {
  d = new ColoredSpot(0, 500, 100, D, color (0, 255, 0));
  e = new Two_Spots(225, 0, 100, E, color(12, 12, 255));
  f = new Two_Spots(200, 100, 100, F, color(12, 255, 12));
- 
- 
+ g = new SpikedSpheres(800,50, 100, G, color(12,255,12),color(255,0,0));
+ h = new SpikedSpheres(50,800, 100, H, color(90,58,150),color(0,255,0));
  //Crowd
  guy1 = new Person(125, 600, 150, 200, color(255, 181, 132), color(7, 255, 139));
  guy2 = new Person(525, 700, 150, 200, color(255, 224, 175), color(255, 255, 255));
@@ -49,7 +52,7 @@ void draw() {
  d.display();
  //e.display();
  //f.display();
- 
+ g.display();
  //crowd 
  guy1.display();
  guy1.move();
@@ -64,6 +67,7 @@ void draw() {
  //b.move();
  c.move();
  d.move();
+ g.move();
  //e.move();
  //f.move();
 }
