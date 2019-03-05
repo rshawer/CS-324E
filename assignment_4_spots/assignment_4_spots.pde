@@ -10,6 +10,7 @@ Person guy1;
 Person guy2;
 Person guy3;
 SunMoon day;
+String time="day";
 
 
 void setup () {
@@ -47,9 +48,12 @@ void draw() {
   
  clear();
  if (day.time == "day") {
+   //time="day";
    background(175, 244, 255);
  }
  else {
+   //time="night";
+   //g.display();
    background(0);
  }
    
@@ -79,7 +83,10 @@ void draw() {
  //b.move();
  c.move();
  d.move();
- g.move();
+ //g.move();
  //e.move();
  //f.move();
+ //5g.display();
+ g.display();
+ g.move();
 }

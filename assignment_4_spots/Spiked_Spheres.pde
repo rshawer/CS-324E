@@ -1,10 +1,12 @@
 class SpikedSpheres extends ColoredSpot{
   color spikecolor;
+  String time;
   
   
   SpikedSpheres(float xval, float yval, float rval, Vector t, color c, color spikecolor){
     super(xval, yval, rval, t, c);
     this.spikecolor = spikecolor;
+    //this.time = time;
     
     
   }
@@ -23,23 +25,41 @@ class SpikedSpheres extends ColoredSpot{
   endShape(CLOSE);
   }
   void display(){
-     
+     pushMatrix();
      fill(spikecolor);
      //pushMatrix();
      //translate(width,height);
-     //rotate(frameCount/400);
+     //rotate(frameCount/400);\
+     //star(x,y, 60, 140, 5);
+     //if(time=="night"){
+      // scale(1);
+     //}
+     //if(time=="day"){
+       //scale(0.5);
+     //}
+     translate(width/12, height/12);   // Move coordinate system to center of sketch
+ 
+     rotate(millis() * 0.0001 * TWO_PI / 10.0);   // Move 360 degrees in ten second
+    
+     translate(80, 0); // Move away from the center
+    
+     rotate(millis() * 0.0001 * TWO_PI); 
      star(x,y, 60, 140, 5);
-     //popMatrix();
+     //pushMatrix();
      fill(c);
      ellipse (x, y, radius, radius); 
-     
+     popMatrix();
+     //scale(1);
   
   }
   
   void move() {
+    //rotate(radians(45));
    super.move();
-   rotate(PI / 2);
+   //rotate(radians(45));
+   
  }
+
   
 }
   
