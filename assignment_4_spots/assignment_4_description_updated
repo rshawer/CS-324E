@@ -2,13 +2,13 @@ Assignment 4
 
 In this assignment, 3 types of objects were created and used to animate a scene in Processing. 
 A person class was created, which was implemented in three different instances to create a crowd of people watching the scene play out 
-while cheering. The movement of the person's arms is dependant upon whether the entire object is moving up or down. A transitioning 
-background was also created, switching betweend day and night continuously. Bouncing star-balls were created as well. 
-The spherical star object has two levels to it. The circle can be comapared as the body while the spikes are the ray of light that 
+while cheering. The movement of the person's arms is dependent upon whether the entire object is moving up or down. A transitioning 
+background was also created, switching between day and night continuously. Bouncing star-balls were created as well. 
+The spherical star object has two levels to it. The circle can be compared as the body while the spikes are the ray of light that 
 forms a star. The circle translates around the map and moves around. The star/spears will rotate as the entire body moves.
 
 Jason Lan/Changjie Lan: Was responsible for the stars/ball class (the spiked object class). Implemented motions and the rotations of 
 the stars/spikes of the object.
 Waleed Khan: Created the crowd of humans jumping up and down with moving arms. Also did the base functionality for the stars/ball classes, 
 which bounced around the screen. 
-Javier Alvarado:
+Cesar Javier Alvarado: created the sun/moon in the background. This object will change based on the time of day. If the input given is "night" then the first background will be black with a moon in it. If the input is "day" then the background is light blue with a sun. This changes each time the sun/moon reaches the end of the canvas.
