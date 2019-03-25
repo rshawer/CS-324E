@@ -20,14 +20,18 @@ class Saturn{
   
   void display(){
     
+    pushMatrix();
     translate(x,y);
     fill(SaturnColor);
     stroke(0);
     strokeWeight(1);
     rotateY(radians(frameCount)*1.25);
     sphere(Size);
+    popMatrix();
+ 
     
     pushMatrix();
+    translate(x, y);
     stroke(RingColor);
     strokeWeight(Weight);
     noFill();
@@ -37,6 +41,7 @@ class Saturn{
     popMatrix();
     
     pushMatrix();
+    translate(x, y);
     stroke(RingColor2);
     strokeWeight(Weight);
     noFill();
