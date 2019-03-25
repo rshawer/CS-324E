@@ -1,1 +1,1 @@
-Press play and you should see three parts. The planets rotating the sun. The Planet Saturn that spins and its rings that rotates  x and y. The Comet.
+Press play and you should see three parts. The planets rotating the sun. The Planet Saturn that spins and its rings that rotates  x and y. And several comets/asteroid bouncing around the canvas.
