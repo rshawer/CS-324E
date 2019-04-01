@@ -30,7 +30,7 @@ void draw() {
  lights();
  for (int i = 0; i < 20; i++) {
     stars[i].putforce(stars[i].goTo(mouseX, mouseY));
-    stars[i].run();
+    stars[i].activate();
   }
  // Draw calls for comets
  for(int i = 0; i < 3000; i++) {
