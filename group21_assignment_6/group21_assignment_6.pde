@@ -35,7 +35,7 @@ void draw() {
  // Draw calls for comets
  for(int i = 0; i < 3000; i++) {
   comets[i].move();
-  stroke(comets[i].hue, comets[i].bright, 255);
+  stroke(random(0, 255), random(0, 255), 255);
   //Vector shift
   PVector newPos = comets[i].pos.copy();
   newPos.sub(comets[i].lastPos);
