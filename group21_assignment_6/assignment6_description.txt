@@ -3,7 +3,7 @@ The stars gravitate towards the mouse cursor while the comets are pushed away fr
 The classes were worked on individually and compiled into one final scene. 
 
 Waleed:
-	Comets
+	Comets will fly away from the mouse with a repulsion force. Afterwards, there is also a force of gravity on the comets as they wobble around. 
 
 Jason:
 	Stars- The stars experiences gravity through inertia. The star will keep on heading towards the cursor, but will not stop there as they keep moving forward till you put the mouse somewhere else. The star also has a rotational force onto it while the star moves to the location
