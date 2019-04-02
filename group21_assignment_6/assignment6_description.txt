@@ -1,7 +1,7 @@
 This simulation depicts a scene in space with stars, planets, and comets. 
 The stars gravitate towards the mouse cursor while the comets are pushed away from the mouse cursor.
 The classes were worked on individually and compiled into one final scene. 
-The planets...
+The planets changed their location and color upon a mouse click.
 
 Waleed:
 	Comets
