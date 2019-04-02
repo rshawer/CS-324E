@@ -7,6 +7,6 @@ Waleed:
 	Comets
 
 Jason:
-	Stars
+	Stars- The stars experiences gravity through inertia. The star will keep on heading towards the cursor, but will not stop there as they keep moving forward till you put the mouse somewhere else. The star also has a rotational force onto it while the star moves to the location
 Javier:
 	Planets

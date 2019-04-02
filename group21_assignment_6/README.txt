@@ -1,2 +1,2 @@
 In order to run the simulation, open the group21_assignment_6 file. Upon mouse movement, comets will be pushed away from the 
-cursor while stars will be pushed towards it. Click the mouse to reset the simulation.
+cursor while stars will be pushed towards it. The stars have inertia and gravity on them. They do not stay on the cursor rather they will keep on flying. Click the mouse to reset the simulation.
