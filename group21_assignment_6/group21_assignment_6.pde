@@ -6,7 +6,8 @@ int cometCount = 3000;
 Comet[] comets = new Comet[cometCount];
 color globalHue;
 Star[] stars;
-
+Planet[] planets;
+int num_planets = 5;
 // placeholder
 
 // placeholder
@@ -20,6 +21,12 @@ void setup() {
     PVector s = new PVector(random(0, width), random(0, height));
     stars[i] = new Star(s);
  }
+ planets = new Planet[num_planets];
+ for (int i = 0; i < num_planets; i++) {
+    PVector position = new PVector(random(0,width), random(0, height));
+    float radius = random(40, 80);
+    planets[i] = new Planet(position, radius);
+ }
  noStroke();
  fill(0,255,255);
  reset();
@@ -31,6 +38,10 @@ void draw() {
  for (int i = 0; i < 20; i++) {
     stars[i].putforce(stars[i].goTo(mouseX, mouseY));
     stars[i].activate();
+  }
+ for (int i = 0; i < num_planets; i++) {
+    planets[i].applyforces();
+    planets[i].display();
   }
  // Draw calls for comets
  for(int i = 0; i < 3000; i++) {
@@ -53,6 +64,9 @@ void draw() {
 }
 
 void mouseClicked() {
+  for(int i = 0; i < num_planets; i++) {
+      planets[i].warp();
+    }
  reset(); 
 }
 
