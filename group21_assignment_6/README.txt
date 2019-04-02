@@ -1,0 +1,2 @@
+In order to run the simulation, open the group21_assignment_6 file. Upon mouse movement, comets will be pushed away from the 
+cursor while stars will be pushed towards it. Click the mouse to reset the simulation.
