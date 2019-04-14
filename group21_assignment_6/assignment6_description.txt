@@ -8,4 +8,4 @@ Waleed:
 Jason:
 	Stars- The stars experiences gravity through inertia. The star will keep on heading towards the cursor, but will not stop there as they keep moving forward till you put the mouse somewhere else. The star also has a rotational force onto it while the star moves to the location
 Javier:
-	Planets- The planets will be floating around space without trouble. Upon a mouse click, they will warp onto another section of the screen and change their color along the process.
+	Planets- The planets will be floating around space without trouble.They also bounce on the border and are bounced back to the center. Upon a mouse click, they will warp onto another section of the screen and change their color along the process.
