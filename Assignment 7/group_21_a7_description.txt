@@ -1,0 +1,7 @@
+This is a game of snake. The player controls a small snake at first. The point of the player is to eat the food and grow bigger. The snake cannot go out of bound, or touch itself. 
+There are three rules of the game. The snake cannot go out of bound. The snake cannot touch each other. The snake only grows in size if its head touches the food.
+Once the player gains 10 points, the game ends. The player have won.
+
+Jason - Created the food and allow it to be eaten. The food should randomly generate around the map.
+Javier- Created GUI for the game and the score. Created victory screen.
+Waleed - Created the snake. The snake cannot hit itself or go out of bound. The snake grows in size when it eats food.

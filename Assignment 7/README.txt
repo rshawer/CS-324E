@@ -1,0 +1,1 @@
+click on the screen and move the arrow keys to play. The game starts when you first press one of the arrow keys. 
