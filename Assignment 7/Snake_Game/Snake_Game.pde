@@ -1,7 +1,6 @@
 Snake snek;
 food foodie;
 int score = 0;
-import java.lang.Math;
 PFont f;
 int target = 5;
 
