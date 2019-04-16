@@ -3,9 +3,10 @@ food foodie;
 int score = 0;
 PFont f;
 int target = 5;
+int life = 3;
 
 void setup() {
-  frameRate(12);
+  frameRate(15);
   size(500, 500);
   noStroke();
   background(0);
@@ -30,8 +31,16 @@ void draw() {
   }
   
   text(score, 70, 20); //display score
-  
+  text("Life", 420, 20);
+  text(life, 460, 20);
   //display win/lose window
+  win();
+  lose();
+  
+  
+}
+
+void win() {
   if (score == target) {
       fill(255);
       textFont(f);
@@ -43,8 +52,28 @@ void draw() {
         }
       }
     }
-  }
+}
 
+void lose() {
+  if (snek.x > 505 || snek.x < -5) {
+    life = life - 1;
+    reset_snek();
+  }
+   else if (snek.y > 505 || snek.y < -5) {
+     life = life - 1;
+     reset_snek();
+   }
+   
+   if (life == 0) {
+  }
+}
+     
+     
 void reset() {
   score = 0; 
+}
+
+void reset_snek(){
+  snek.x = 137;
+  snek.y = 24;
 }
