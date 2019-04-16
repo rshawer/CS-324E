@@ -89,6 +89,6 @@ void reset() {
 }
 
 void reset_snek(){
-  snek.x = 137;
-  snek.y = 24;
+  snek.x = (int)random(100, 300);
+  snek.y = (int)random(100, 300);
 }
