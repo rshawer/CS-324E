@@ -94,16 +94,16 @@ class Snake {
  
  void move(){
   if(Right == true) {
-   x += 4; 
+   x += 8; 
   }
   if(Left == true) {
-   x -= 4; 
+   x -= 8; 
   }
   if(Up == true) {
-   y -= 4; 
+   y -= 8; 
   }
   if(Down == true) {
-   y += 4; 
+   y += 8; 
   }
  }
 }

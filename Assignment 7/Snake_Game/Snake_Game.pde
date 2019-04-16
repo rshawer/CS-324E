@@ -19,7 +19,7 @@ void setup() {
 void draw() {
   background(0);
   snek.keyPressed();
-  if (score != target ) {
+  if (score != target && life > 0) {
     snek.move();
   }
   snek.display();
@@ -36,6 +36,7 @@ void draw() {
   //display win/lose window
   win();
   lose();
+  dead();
   
   
 }
@@ -45,6 +46,20 @@ void win() {
       fill(255);
       textFont(f);
       text("YOU WON!", 250, 250);
+      text("Press Tab to play again.", 250, 275);
+      if (keyPressed) {
+        if (key == TAB) {
+          reset();
+        }
+      }
+    }
+}
+
+void dead() {
+  if (life <= 0) {
+      fill(255);
+      textFont(f);
+      text("YOU LOST!", 250, 250);
       text("Press Tab to play again.", 250, 275);
       if (keyPressed) {
         if (key == TAB) {
