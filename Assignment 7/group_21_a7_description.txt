@@ -1,7 +1,7 @@
-This is a game of snake. The player controls a small snake at first. The point of the player is to eat the food and grow bigger. The snake cannot go out of bound, or touch itself. 
-There are three rules of the game. The snake cannot go out of bound. The snake cannot touch each other. The snake only grows in size if its head touches the food.
-Once the player gains 10 points, the game ends. The player have won.
+This is a game like snake called Mouse. The player controls a small mouse. The point of the player is to eat the food and gain points. The mouse should not go out of bounds.
+There are three rules of the game. The mouse cannot go out of bounds three times or it will die. The food disappears after eaten and is randomly generated again. If the mouse goes out of bounds, it randomly gets placed back in as long as it still has lives left.
+Once the player gains 5 points, the game ends. The player have won.If it dies goes out of bounds 3 times, you lose.
 
 Jason - Created the food and allow it to be eaten. The food should randomly generate around the map.
-Javier- Created GUI for the game and the score. Created victory screen.
-Waleed - Created the snake. The snake cannot hit itself or go out of bound. The snake grows in size when it eats food.
+Javier- Created GUI for the game and the score. Created victory screen. Created loss screen
+Waleed - Created the mouse. The mouse cannot go out of bound, it it does, it gets randomly placed back up to 2 times. The mouse has a set speed. 
