@@ -28,6 +28,12 @@ void draw() {
   if (abs(snek.x-foodie.x)<=5 &&abs(snek.y-foodie.y)<=5){
     foodie = new food(20*(int) random(0, 20), 20*(int) random(0, 20));
     score = score + 1;
+    if (score==3){
+      frameRate(30);
+    }
+    if (score==4){
+      frameRate(45);
+    }
   }
   
   text(score, 70, 20); //display score
