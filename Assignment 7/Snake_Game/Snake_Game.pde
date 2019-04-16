@@ -1,9 +1,9 @@
 Snake snek;
 food foodie;
 int score = 0;
-boolean flag;
-boolean reset;
 import java.lang.Math;
+PFont f;
+int target = 5;
 
 void setup() {
   frameRate(12);
@@ -12,12 +12,16 @@ void setup() {
   background(0);
   snek = new Snake(100, 100);
   foodie = new food(20*(int) random(0, 20), 20*(int) random(0, 20));
+  f = createFont("Arial",20, true);
+  textSize(20);
 }
 
 void draw() {
   background(0);
   snek.keyPressed();
-  snek.move();
+  if (score != target ) {
+    snek.move();
+  }
   snek.display();
   foodie.show();
   text("Score", 10, 20);
@@ -25,31 +29,23 @@ void draw() {
     foodie = new food(20*(int) random(0, 20), 20*(int) random(0, 20));
     score = score + 1;
   }
-  text(score, 50, 20); //display score
+  
+  text(score, 70, 20); //display score
   
   //display win/lose window
-  /*
-  if ((snek.x > 500) || (snek.x < 0)) {
-    flag = true;
-    fill(0);
-    while (flag) {
-      text("You lost!", 250, 250);
+  if (score == target) {
+      fill(255);
+      textFont(f);
+      text("YOU WON!", 250, 250);
+      text("Press Tab to play again.", 250, 275);
       if (keyPressed) {
-        flag = false;
+        if (key == TAB) {
+          reset();
+        }
       }
     }
   }
-  else if((snek.y > 500) || (snek.y < 0)) {
-    flag = true;
-    fill(0);
-    while (flag) {
-      text("You lost!", 250, 250);
-      if (keyPressed) {
-        flag = false;
-        reset = true;
-      }
-    }
-  }
-  */
 
+void reset() {
+  score = 0; 
 }
